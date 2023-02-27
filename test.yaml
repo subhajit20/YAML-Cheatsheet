@@ -1,0 +1,62 @@
+# YAML document starts with three dashes (`...`)
+# end with three dots (`...`)
+
+# yml - list
+mylist:
+  - 1
+  - 2
+  - 3
+  - subhajit
+
+# another way
+
+mylist1: [1,2,2,3]
+
+# neted mapping
+---
+student: 
+  - name: Subhajit Ghosh
+    id: 10
+    subjects: [
+      C,
+      Java,
+      Python
+    ]
+    stream: Bachelor of Computer Application
+    semester: 6th
+  - name: Badal Ghosh
+    id: 20
+    subjects: [
+      Jabvascript,
+      C#,
+      Go
+    ]
+    stream: Bachelor of Computer Application
+    semester: 6th
+---
+# yml - null value
+address: null
+
+# yml - date and time
+date: 5-20-04
+
+# yml - multiline string
+---
+description: !
+  Hello this 
+  is my yml file where
+  I am writing yml
+  code 
+
+# yml - explicitly specifying datatypes
+---
+name: !!str Subhajit Ghosh
+roll: !!int 10
+is_student: !!bool true
+---
+
+# yml - set
+myset: !!set
+  ? red
+  ? blue
+...
